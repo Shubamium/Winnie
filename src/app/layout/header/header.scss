@@ -4,6 +4,8 @@
 	margin: 0 auto;
 	align-items: start;
 	justify-content: space-between;
+	position: relative;
+	z-index: 100;
 	figure{
 		max-width: 220px;
 		margin-top: 1em;
@@ -44,10 +46,10 @@
 			z-index: -1;
 		}
 		.nav-link{
-			color: white;
+			color: #B0B0B0;
 			text-decoration: none;
 			font-family: var(--fontHead);
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			transition: all 250ms ease;
 		
 			position: relative;
