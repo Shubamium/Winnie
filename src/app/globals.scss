@@ -2,4 +2,22 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	// color: white;
+	--gold:#C49C51;
+	--red:#402125;
+	--blue:#355275;
+}
+
+p{
+	color: white;
+	
+}
+h2{
+	
+	color: white;
+}
+
+body{
+	font-family: var(--fontHead);
+	background: linear-gradient(94deg, #12131A 0.72%, #0F1017 94.49%);
 }
