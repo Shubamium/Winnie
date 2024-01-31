@@ -9,12 +9,18 @@
 	--lBlue:#80B8E2;
 }
 
+.b{
+	color: var(--lBlue);
+}
 p{
 	color: white;
-	
+	font-family: var(--fontPara);
+	font-weight: 200;
 }
 h2{
 	
+	font-weight: 800;
+	font-family: var(--fontHead);
 	color: white;
 }
 
@@ -64,5 +70,16 @@ body{
 	}
 	&:active{
 		scale: .9;
+	}
+}
+
+
+
+@keyframes speen {
+	0%{
+		rotate: 0deg;
+	}
+	100%{
+		rotate: 360deg;
 	}
 }

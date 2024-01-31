@@ -22,12 +22,12 @@ export default function Footer({}: Props) {
 								<h2>NAVIGATION</h2>
 								<ul>
 									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> HOME</Link></li>
-									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> ABOUT</Link></li>
-									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> SERVICE</Link></li>
-									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> PRICE</Link></li>
-									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> FAQ</Link></li>
-									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> TERMS</Link></li>
-									<li className='nav-link'><Link href={'/'} className='nav-link'><FaSnowflake/> CLIENTS</Link></li>
+									<li className='nav-link'><Link href={'/service/list'} className='nav-link'><FaSnowflake/> SERVICE</Link></li>
+									<li className='nav-link'><Link href={'/service/credentials'} className='nav-link'><FaSnowflake/> ABOUT</Link></li>
+									<li className='nav-link'><Link href={'/service/pricing'} className='nav-link'><FaSnowflake/> PRICE</Link></li>
+									<li className='nav-link'><Link href={'/terms/faq'} className='nav-link'><FaSnowflake/> FAQ</Link></li>
+									<li className='nav-link'><Link href={'/terms/tos'} className='nav-link'><FaSnowflake/> TERMS</Link></li>
+									<li className='nav-link'><Link href={'/clients'} className='nav-link'><FaSnowflake/> CLIENTS</Link></li>
 								</ul>
 							</nav>
 							<div className="other">
