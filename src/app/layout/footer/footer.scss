@@ -1,0 +1,121 @@
+#footer{
+	min-height: 400px;
+	background: #090c11;
+	margin-top: 200px;
+	border-radius: 5em 5em 0 0;
+	padding-top: 3em;
+	.confine{
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		margin: 0 auto;
+		gap: 3em;
+		max-width: 1200px;
+		height: 300px;
+		.bio-part{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			text-align: right;
+			hr{
+				max-width: 70%;
+				width: 80%;
+				margin: .5em 0;
+				height: 0;
+				border: 1px solid #354C5E;
+			}
+			.subtitle{
+				letter-spacing: 2px;
+				font-family: var(--fontAlt);
+				color: var(--gold);
+			}
+			
+			.footer-logo{
+				max-width: 60%;
+				margin: -1em 0;
+			}
+			.footer-text{
+				font-weight: 300;
+				font-family: var(--fontPara);
+				letter-spacing: 1px;
+				font-size: .8rem;
+				margin: 1em 0;
+				opacity: .7;
+			}
+			.others{
+				a{
+					text-decoration: none;
+					color: var(--lBlue);
+					font-family: var(--fontPara);
+					letter-spacing: 2px;
+				}
+			}
+		}
+
+		.nav-part{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			h2{
+				color: var(--gold);
+				letter-spacing: 2px;
+			}
+			nav{
+				ul{
+					display: flex;
+					padding-top: 1em;
+					flex-direction: column;
+					gap: .25em;
+					list-style: none;
+					.nav-link{
+						color: white;
+						text-decoration: none;
+						letter-spacing: 2px;
+						opacity: .8;
+						transition: all 350ms ease;
+						font-family: var(--fontPara);
+						font-weight: 200;
+						&:hover{
+							color: var(--gold);
+							text-decoration: dashed;
+						}
+					}
+				}
+			}
+
+			.other{
+				.contacts{
+					justify-content: start;
+				}
+				
+				.credit{
+					color: white;
+					font-family: var(--fontPara);
+					font-weight: 200;
+					a{
+						font-weight: 500;
+						text-decoration: none;
+						color: var(--lBlue);
+					}
+				}
+
+				.btn-top{
+					color: #9B676E;
+					background: #2F1C21;
+					text-decoration: none;
+
+					padding: .3em 1em;
+					display: flex;
+					gap: 1em;
+					margin: 1em 0;
+					align-items: center;
+				}
+				
+			}
+		}
+		.copyright{
+			font-family: var(--fontPara);
+			opacity: .4;
+			
+		}
+	}
+}

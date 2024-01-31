@@ -94,23 +94,25 @@
 					}
 					.blue{
 						color: var(--lBlue);
+						font-weight: bold;
 					}
 					.descrip{
 						display: inline-block;
 						margin: 1em 0;
 					}
 
-					.final{
-						display: flex;
-						// align-content: center;
-						align-items: center;
-						hr{
-							// wid
-							width: 100px;
-							height: 0px;
-							margin: 0 1em;
-							border: 1px solid white;
-						}
+				}
+				.final{
+					display: flex;
+					// align-content: center;
+					align-items: center;
+					.line{
+						// wid
+						width: 100px;
+						height: 0px;
+						margin: 0 1em;
+						display: inline-block;
+						border: 1px solid white;
 					}
 				}
 

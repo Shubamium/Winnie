@@ -3,6 +3,7 @@ import { Bodoni_Moda,  Montserrat,Hahmlet} from "next/font/google";
 import "./globals.scss";
 import Header from "./layout/header/Header";
 import { CSSProperties } from "react";
+import Footer from "./layout/footer/Footer";
 
 const bodoni = Bodoni_Moda({ subsets: ["latin"], variable:'--fontHead' });
 const hahmlet = Hahmlet({ subsets: ["latin"],variable:'--fontPara'},);
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body className=''style={{'--fontHead':bodoni.style.fontFamily,'--fontPara':hahmlet.style.fontFamily,'--fontAlt':monstserrat.style.fontFamily} as CSSProperties}  >
 				<Header/>
 				{children}
-				
+				<Footer/>
 			</body>
     </html>
   );
