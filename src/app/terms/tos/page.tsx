@@ -74,6 +74,49 @@ export default function Terms({}: Props) {
 					</div>
 				</div>
 			</div>
+
+			<section className='communication'>
+					<div className="confine">
+						<div className="comm-head">
+							<h2><span className="b">C</span>OM<span className="b">MU<span className="b">N</span></span>ICATIO<span className="b">N</span></h2>
+							<div className="line"></div>
+						</div>
+						<p>During the initial phase of our collaboration and the active months/period the client is responsible to communicate me any key information about the service im providing. Since communication {`it's`} a primary concept in this kind of relationships you are required to give me accurate information whenever asked so that i am able to effectively help you and decide if my services are suitable for your needs and goals.</p>
+					</div>
+			</section>
+
+			<section className='payment-terms'>
+				<SectionHeading title={<>PAYMENT &<br/> BUSINESS RIGHTS</>}/>
+				<div className="payment-terms-list">
+					<div className="pt-terms">
+						<p>By engaging with my services, the client hereby agrees to pay in full, upfront unless we outline a payment plan beforehand. Partial payments shall not be deemed acceptable or permissible under any circumstances. If any additional service will constitute an extra charge, I pledge to be upfront with my client about the change.</p>
+					</div>
+					<div className="pt-terms">
+						<p>Client owns all works product. To avoid confusion, work product is the finished product, as well as drafts, notes, materials, mockups, hardware, designs, inventions, patents, code, and anything else that we will be working on that is, conceives, creates, designs, develops, invents, works on, or reduces to practice—as part of this project, whether before the date of this collaboration or after. </p>
+						<p>I will be giving to the clients all of our works product rights, titles, and interests in and to the work product (including intellectual property rights), and the Client will be the sole owner of it only after the full payment has been done. The Client can use the work product however it wants.“Work Product”, for the purposes of these service(s) and contract will be defined as the Marketing, Branding, Public Relations, Advertising, and knowledge and counsel imparted from me to the client for the duration of our collaboration period.</p>
+					</div>
+					<div className="pt-terms">
+						<p>You agree not to chargeback unless a serious breach of our agreement has occurred. </p>
+						<p>If you DO chargeback despite services rendered, you will be completely blacklisted and I will take appropriate action against you.</p>
+					</div>
+				</div>
+			</section>	
+
+
+			<section className='words'>
+				<div className="heading-decor">
+					<div className="line"></div>
+						<img src="/images/decors/snowflake.png" alt="" className='decor_snow' />
+						<img src="/images/decors/snowflake.png" alt="" className='decor_snow big' />
+						<img src="/images/decors/snowflake.png" alt="" className='decor_snow' />
+					<div className="line"></div>
+				</div>
+				<div className="word">
+					<p>I {`can't`} make any guarantees. Success as a content creator comes down to multiple factors: quality, consistency, algorithms, timing, and luck. </p>
+					<p>The only things i can surely provide you {`it's`} my full dedication to the services and project we are willing to bring, and an deep knowledge of the matter and strategies we are going to apply, but I remind you that this is a mutual collaboration where everyone has their roles, and i will be doing mine 100%. 
+Results will also be showing basing on the client behavior.</p>
+				</div>
+			</section>
 		</main>
 	)
 }
