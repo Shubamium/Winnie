@@ -14,7 +14,7 @@ export default function Header({}: Props) {
 			<nav id='navigation'>
 				<Link href={'/'} className='nav-link active'>HOME</Link>
 				<Link href={'/service/credentials'} className='nav-link'>SERVICE</Link>
-				<Link href={'/terms'} className='nav-link'>TERMS</Link>
+				<Link href={'/terms/tos'} className='nav-link'>TERMS</Link>
 				<Link href={'/clients'} className='nav-link'>CLIENTS</Link>
 			</nav>
 		</header>
