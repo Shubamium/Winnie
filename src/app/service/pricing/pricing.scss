@@ -1,0 +1,145 @@
+#page_pricing{
+	position: relative;
+
+	&::before{
+		content:'';
+		position:absolute;
+		top:20vh;
+		left:0%;
+		width:100%;
+		height:50vh;
+		background: url('/images/backgrounds/other_background.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		filter: blur(30px);
+		z-index: -1;
+		position: fixed;
+	}
+	.price-content{
+		text-align: center;
+		padding: 0 1em;
+		.price-nav{
+			display: flex;
+			justify-content: center;
+			gap: 1em;
+			margin: 1em 0;
+
+			.btn-price-nav{
+				// color: var(--gold);
+				color: white;
+				font-size: 1.3rem;
+				opacity: .2;
+				&:hover{
+					color: var(--gold);
+					opacity: .5;
+				}
+				&.active{
+					opacity: 1;
+					color: var(--gold);
+					text-decoration: underline;
+				}
+			}
+		}
+		.description{
+			max-width: 80%;
+			margin: 0 auto;
+			opacity: .7;
+		}
+
+		.price-list{
+			.price{
+				padding: 1em;
+				margin: 1em 0;
+				background: #0A121E;
+				.detail{
+					.header{
+						.main-icon{
+							color: white;
+							font-size: 4rem;
+						}
+						h2{
+							text-transform: capitalize;
+							font-family: var(--fontAlt);
+							letter-spacing: 2px;
+							font-weight: 200;
+							font-size: 1.2rem;
+							color: var(--gold);
+						}
+					}
+					.hr{
+						display: flex;
+						justify-content: stretch;
+						align-items: center;
+						max-width: 70%;
+						margin: .5em auto;
+						.line{
+							width: 100%;
+							margin: 0 1em;
+							height: 0px;
+							border-top: 1px solid white;
+						}
+						.diamond{
+							rotate: 45deg;
+							width: 12px;
+							height: 12px;
+							background:white;
+							aspect-ratio: 1/1;
+						}
+					}
+					.description{
+						font-size: .8rem;
+						color: white;
+						letter-spacing: 2px;
+					}
+				}
+
+				.pricing{
+					.price-container{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.line{
+							width: 4em;
+							height: 0px;
+							border-top: 1px solid white;
+						}
+						.price-text{
+							p{
+								font-size: 2.5rem;
+								font-family: var(--fontHead);
+								color: var(--gold);
+								font-weight: 800;
+								padding: .25em 3em;
+								z-index: 1;
+								position: relative;
+							}
+							position: relative;
+							&::before{
+								content:'';
+								position:absolute;
+								top:0%;
+								left:0%;
+								width:100%;
+								height:100%;
+
+								background: var(--red);
+								scale: .8 .3;
+							}
+						}
+					}
+
+					.extras{
+						.extra{
+							padding: .25em;
+							background: #102B4F;
+							margin: .45em 0;
+							font-weight: normal;
+							opacity: .9;
+							font-size: .8rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

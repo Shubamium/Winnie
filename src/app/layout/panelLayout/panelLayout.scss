@@ -1,0 +1,73 @@
+.panel_layout{
+	max-width: 900px;
+	margin: 0 auto;
+	background: url('/images/backgrounds/texture_paper.png'),#0A131F;
+	background-blend-mode: overlay;
+	border:2px solid var(--gold);
+	min-height: 100vh;
+	margin-top: 100px;
+
+	.logo-container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		.logo{
+			margin-top: -100px;
+			background: url('/images/decors/glass.png'),var(--red);
+			background-repeat: no-repeat;
+			background-size: 80%;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			position: relative;
+			.decor_logo{
+				position:absolute;
+				top:0%;
+				left:0%;
+				width:100%;
+				height:100%;
+				object-fit: contain;
+				scale: 1.5;
+			}
+			.decor_text{
+				scale: 1.3;
+				animation: speen 15s infinite linear;
+				position:absolute;
+				top:0%;
+				left:0%;
+				width:100%;
+				height:100%;
+				object-fit: contain;
+				
+			}
+		}
+	}
+
+	.panel-header{
+		text-align: center;
+		margin: 2em 0;
+		.pretext{
+			opacity: .8;
+			letter-spacing: 2px;
+			font-family: var(--fontHead);
+			font-weight: 200;
+		}
+		.head{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1em;
+			.line{
+				width: 5em;
+				border: 1px solid white;
+				height: 0px;
+			}
+
+			h2{
+				font-size: 3.5rem;
+				line-height: 80%;
+				color: var(--gold);
+			}
+		}
+	}
+}

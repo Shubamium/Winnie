@@ -8,6 +8,7 @@ type Props = {}
 export default function CredentialsPage({}: Props) {
 	return (
 		<main id='page_credentials'>
+				<div className="credential">
 				<div className="confine">
 						<figure className='art-part'>
 								<img src="/images/graphics/character-art.png" alt="" className='character-art' />
@@ -38,6 +39,7 @@ export default function CredentialsPage({}: Props) {
 								<Link href={'/service/list'} className='btn btn-next'> Service <CgArrowRight/> </Link>
 							</div>
 						</article>
+				</div>
 				</div>
 		</main>
 	)
