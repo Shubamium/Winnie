@@ -9,6 +9,8 @@ type Props = {
 export default function PanelLayout({children, title,pretext}: Props) {
 	return (
 		<div className='panel_layout'>
+				<div className="decor_r"></div>
+				<div className="decor_l"></div>
 				<div className="logo-container">
 						<div className="logo">
 							<img src="/images/decors/text-circle.png" alt="" className='decor_text' />
@@ -26,7 +28,7 @@ export default function PanelLayout({children, title,pretext}: Props) {
 				{children}
 
 				<div className="decor_end">
-						<img src="/images/decors/frame-end.png" alt="" />
+						<img src="/images/decors/frame_end.png" alt="" />
 				</div>
 		</div>
 	)
