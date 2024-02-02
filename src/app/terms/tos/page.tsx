@@ -83,6 +83,9 @@ export default function Terms({}: Props) {
 							<div className="line"></div>
 						</div>
 						<p>During the initial phase of our collaboration and the active months/period the client is responsible to communicate me any key information about the service im providing. Since communication {`it's`} a primary concept in this kind of relationships you are required to give me accurate information whenever asked so that i am able to effectively help you and decide if my services are suitable for your needs and goals.</p>
+						<img src="/images/decors/snowflake.png" alt="" className='decor_snow' />
+						<img src="/images/decors/snowflake.png" alt="" className='decor_snow two' />
+						<img src="/images/decors/snowflake.png" alt="" className='decor_snow three' />
 					</div>
 			</section>
 
