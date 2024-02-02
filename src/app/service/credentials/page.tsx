@@ -12,10 +12,17 @@ export default function CredentialsPage({}: Props) {
 				<div className="confine">
 						<figure className='art-part'>
 								<img src="/images/graphics/character-art.png" alt="" className='character-art' />
+								<img src="/images/graphics/main-logo.png" alt="" className='decor decor_logo' />
+								<img src="/images/decors/snowflake.png" alt="" className='decor decor_snow-one' />
+								<img src="/images/decors/snowflake.png" alt="" className='decor decor_snow-two' />
 						</figure>
 						<article>
 							<h2 className='title'><span className="b">C</span>redenti<span className="b">a</span>ls & Expe<span className="b">ri</span>en<span className="b">ces</span></h2>
 							<p className='about'>Before getting into the actual business, here some credentials and experiences i aquired during my journey!</p>
+							<div className="decors-top">
+								<img src="/images/decors/cofee.png" alt="" className='decor_coffe' />	
+								<img src="/images/decors/text-circle.png" alt="" className='decor_text' />	
+							</div>
 							<div className="points">
 								<div className="point">
 									<img src="/images/decors/snowflake.png" alt="" className='snow' />
