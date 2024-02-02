@@ -1,10 +1,29 @@
 #page_faq{
 
 	.faq-container{
-
+		
 		.list-of-questions{
 			display: flex;
 			flex-direction: column;
+		}
+
+		.ask-more-questions{
+			margin: 100px 0;
+			text-align: center;
+			background: #0B0F15;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 1em;
+			img{
+				max-width: 50px;
+				margin-top: -35px;
+				animation: speen 25s infinite linear;
+			}
+			p{
+				font-size: 2rem;
+			}
 		}
 	}
 }

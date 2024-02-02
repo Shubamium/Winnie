@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import { CgArrowRight } from 'react-icons/cg'
-import { FaListAlt } from 'react-icons/fa'
+import { FaHandshakeAltSlash, FaListAlt } from 'react-icons/fa'
 import PageHeading from '@/app/layout/pageHeading/PageHeading'
 import SectionHeading from '@/app/layout/sectionHeading/SectionHeading'
 import './terms.scss'
 import { BsStack } from 'react-icons/bs'
+import { IoChatbubble } from 'react-icons/io5'
 type Props = {}
 
 export default function Terms({}: Props) {
@@ -43,7 +44,7 @@ export default function Terms({}: Props) {
 					<div className="term center">
 					<div className="icons">
 							<div className="icon">
-								<BsStack/>
+								<FaHandshakeAltSlash/>
 								<img src="/images/decors/text-circle.png" alt="" className='decor_text' />
 							</div>
 						</div>
@@ -59,7 +60,7 @@ export default function Terms({}: Props) {
 					<div className="term red">
 						<div className="icons">
 							<div className="icon">
-								<BsStack/>
+								<IoChatbubble/>
 								<img src="/images/decors/text-circle.png" alt="" className='decor_text' />
 							</div>
 						</div>

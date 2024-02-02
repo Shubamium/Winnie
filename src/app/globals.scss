@@ -116,3 +116,19 @@ main{
 	min-height: 100vh;
 	
 }
+
+.btn-ask{
+	color: var(--lBlue);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	background: rgba(51, 103, 140, 0.46);
+	padding: .25em 1em;
+	border-radius: 1em;
+	border: 1px solid var(--lBlue);
+
+	&.outline{
+		background: none;
+	}
+}

@@ -7,6 +7,7 @@ import { FaListAlt } from 'react-icons/fa'
 import { IoIosPaper } from 'react-icons/io'
 import Question from './question/Question'
 import './faq.scss'
+import { FaCircleQuestion } from 'react-icons/fa6'
 type Props = {}
 
 export default function FaqPage({}: Props) {
@@ -66,6 +67,12 @@ export default function FaqPage({}: Props) {
 					/>
 					
 					
+				</div>
+
+				<div className="ask-more-questions">
+					<img src="/images/decors/snowflake.png" alt="" className='decor_snow' />
+					<p>Still confused about something?</p>
+					<a href="#" className='btn btn-ask'><FaCircleQuestion/> Ask a Question  <CgArrowRight/></a>
 				</div>
 			</section>
 		</main>
