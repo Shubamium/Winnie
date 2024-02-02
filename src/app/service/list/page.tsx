@@ -21,6 +21,7 @@ export default function ListPage({}: Props) {
 			<div className="service-general">
 				<div className="pfp">
 					<img src="/images/graphics/blue-pfp.png" alt="" className='blue-pfp'/>
+					<img src="/images/decors/text-circle.png" alt="" className='decor_text'/>
 				</div>
 				<div className="general-panel">
 					<p>My services can be sostantially splitted in two different categories depending on your needs: Monthly Guidance and Counseling.</p>

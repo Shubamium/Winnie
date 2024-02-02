@@ -146,7 +146,9 @@
 				}
 			}
 			p{
-								
+				.beg{
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}
@@ -162,7 +164,6 @@
 				margin: 1.5em;
 				background: url('/images/backgrounds/texture_paper.png'),#2E171A;
 				background-blend-mode: overlay;
-				color: #FF9494;
 				transition: all 500ms ease;
 
 				&:hover{
@@ -172,6 +173,8 @@
 				}
 				p{
 					margin-bottom: 1em;
+					color: #FF9494;
+
 				}
 			}
 		}
@@ -205,6 +208,17 @@
 			max-width: 1200px;
 			text-align: center;
 			margin: 0 auto;
+			p{
+				margin-bottom: 1em;
+				font-size: 1.5rem;
+				.beg{
+					font-size: 2rem;
+					font-weight: bold;
+				}
+				.gold{
+					color: var(--gold);
+				}
+			}
 		}
 	}
 }

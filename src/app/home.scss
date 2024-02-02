@@ -8,8 +8,19 @@
 		outline: 2px solid;
 		background-repeat: no-repeat;
 		background-size: cover;
-
-
+		position: relative;
+		&::before{
+			content:'';
+			position:absolute;
+			top:0%;
+			left:0%;
+			width:100%;
+			height:100%;
+			scale: .9 .95;
+			border-top: 1px solid var(--gold);
+			border-bottom: 1px solid var(--gold);
+			// background: var(--gold);
+		}
 		.confine{
 			max-width: 1200px;
 			margin: 0 auto;
