@@ -15,14 +15,17 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			padding: 1em;
+			padding: 3em;
 			img{
-				max-width: 50px;
-				margin-top: -35px;
+				max-width: 80px;
+				margin-top: -85px;
 				animation: speen 25s infinite linear;
 			}
 			p{
 				font-size: 2rem;
+			}
+			.btn-ask{
+				margin: 1em 0;
 			}
 		}
 	}

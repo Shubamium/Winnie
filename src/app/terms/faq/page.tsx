@@ -8,9 +8,23 @@ import { IoIosPaper } from 'react-icons/io'
 import Question from './question/Question'
 import './faq.scss'
 import { FaCircleQuestion } from 'react-icons/fa6'
+import { fetchData } from '@/db/db'
+import PortableText from 'react-portable-text'
 type Props = {}
 
-export default function FaqPage({}: Props) {
+
+type faqList ={
+	question:string;
+	answers:any;
+}
+export default async function FaqPage({}: Props) {
+	const faqData = await fetchData<faqList[]>(`
+		*[_type == 'faq'] {
+			question,
+			answers
+		}
+	`);
+	console.log(faqData)
 	return (
 		<main id='page_faq'>
 					<PageHeading title='TERMS OF SERVICE' description={
@@ -25,47 +39,14 @@ export default function FaqPage({}: Props) {
 			<section className='faq-container'>
 				<SectionHeading title={<>LIST OF <br/> QUESTIONS</>}/>
 				<div className="list-of-questions">
-					<Question 
-						question='What is Lorem Ipsum?' 
-						answer={<>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										</>
-									}
-					/>
-					<Question 
-						question='What is Lorem Ipsum?' 
-						answer={<>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										</>
-									}
-					/>
-					<Question 
-						question='What is Lorem Ipsum?' 
-						answer={<>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										</>
-									}
-					/>
-					<Question 
-						question='What is Lorem Ipsum?' 
-						answer={<>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										</>
-									}
-					/>
-					<Question 
-						question='What is Lorem Ipsum?' 
-						answer={<>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										<p>First of all i want to remember that my services as a manager are a luxury and NOT a requirement to be a casual creator. But if you are serious about your business and you are looking to make your Brand grow, i can help you speed up the process utilizing my Marketing and Communication knowledge. </p>
-										</>
-									}
-					/>
-					
+
+					{faqData && faqData.length > 0 && faqData.map((faq, index) => {
+						return <Question 
+								key={faq.question + ''}
+								question={faq.question}
+								answer={faq.answers ? <PortableText content={faq.answers} /> : <></>}
+							/>
+					})}
 					
 				</div>
 
