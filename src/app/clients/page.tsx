@@ -83,23 +83,12 @@ function Client({pfp,name,handle,bio,contacts}:ClientProps){
 				<div className="contact-list">
 					{contacts && contacts.length > 0 && contacts.map((contact,index)=>{
 						return (
-							<a href={contact.Link} target='_blank' className="client-contact" key={contact.type + index}>
+							<a href={contact.Link} target='_blank' className="client-contact" key={contact.Type + index}>
 									{iconList[contact.Type]}
 							</a>
 						)
 					})}
-					{/* <a href="#" target='_blank' className="client-contact">
-						<FaTwitter/>
-					</a>
-					<a href="#" target='_blank' className="client-contact">
-						<FaTwitter/>
-					</a>
-					<a href="#" target='_blank' className="client-contact">
-						<FaTwitter/>
-					</a>
-					<a href="#" target='_blank' className="client-contact">
-						<FaTwitter/>
-					</a> */}
+				
 				</div>
 		</div>
 	</div>
