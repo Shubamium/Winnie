@@ -44,6 +44,7 @@ export default async function FaqPage({}: Props) {
 						return <Question 
 								key={faq.question + ''}
 								question={faq.question}
+								index={index}
 								answer={faq.answers ? <PortableText content={faq.answers} /> : <></>}
 							/>
 					})}
