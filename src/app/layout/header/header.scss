@@ -9,6 +9,12 @@
 	figure{
 		max-width: 220px;
 		margin-top: 1em;
+		transition: all 300ms ease;
+		cursor: pointer;
+		&:hover{
+			
+			scale: 1.05;
+		}
 		.main-logo{
 			width: 100%;
 			height: 100%;

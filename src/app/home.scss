@@ -20,6 +20,8 @@
 			border-top: 1px solid var(--gold);
 			border-bottom: 1px solid var(--gold);
 			// background: var(--gold);
+			user-select: none;
+			pointer-events: none;
 		}
 		.confine{
 			max-width: 1200px;
