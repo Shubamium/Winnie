@@ -28,7 +28,7 @@ export default function PriceSelector({priceData}: Props) {
 					<button className='btn btn-price-nav'>monthly guidance</button>
 					<button className='btn btn-price-nav'>custom service</button> */}
 					{priceData.map((sections)=>{
-						return <button className={`btn btn-price-nav ${activeSection === sections.section ? 'active' : ''}`} onClick={()=>setActiveSection(sections.section)} key={sections.section}>custom service</button>
+						return <button className={`btn btn-price-nav ${activeSection === sections.section ? 'active' : ''}`} onClick={()=>setActiveSection(sections.section)} key={sections.section}>{sections.section}</button>
 					})}
 			</div>
 			<div className="description">
