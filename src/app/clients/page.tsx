@@ -18,7 +18,7 @@ export default async function ClientPage({}: Props) {
 		}
 	`,)
 	// const clientData = []
-	console.log(clientData)
+	// console.log(clientData)
 	return (
 		<main id='page_client'>
 			<PanelLayout  pretext='Work Partners' title='CLIENTS'>

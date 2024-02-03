@@ -24,7 +24,7 @@ export default async function FaqPage({}: Props) {
 			answers
 		}
 	`);
-	console.log(faqData)
+	// console.log(faqData)
 	return (
 		<main id='page_faq'>
 					<PageHeading title='TERMS OF SERVICE' description={

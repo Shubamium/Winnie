@@ -15,7 +15,7 @@ export default function Header({}: Props) {
 				navigate.replace('/');
 			}}>
 				<div className="decor_back"></div>
-				<img src="/images/graphics/main-logo.png" alt="" className='main-logo' />
+			<img src="/images/graphics/main-logo.png" alt="" className='main-logo' />
 			</figure>
 			<Navigation/>
 		</header>
