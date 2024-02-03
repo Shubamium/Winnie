@@ -4,6 +4,7 @@ import "./globals.scss";
 import Header from "./layout/header/Header";
 import { CSSProperties } from "react";
 import Footer from "./layout/footer/Footer";
+import LoadingScreen from "./layout/loadingScreen/LoadingScreen";
 
 const bodoni = Bodoni_Moda({ subsets: ["latin"], variable:'--fontHead' });
 const hahmlet = Hahmlet({ subsets: ["latin"],variable:'--fontPara'},);
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=''style={{'--fontHead':bodoni.style.fontFamily,'--fontPara':hahmlet.style.fontFamily,'--fontAlt':monstserrat.style.fontFamily} as CSSProperties}  >
+				<LoadingScreen/>
 				<Header/>
 				{children}
 				<Footer/>
