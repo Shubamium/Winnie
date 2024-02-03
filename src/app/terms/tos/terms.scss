@@ -164,12 +164,12 @@
 				margin: 1.5em;
 				background: url('/images/backgrounds/texture_paper.png'),#2E171A;
 				background-blend-mode: overlay;
-				transition: all 500ms ease;
+				// transition: all 500ms ease;
 
 				&:hover{
-					scale: 1.02;
-					outline: 2px solid white;
-					outline-offset: 10px;
+					// scale: 1.02;
+					// outline: 2px solid white;
+					// outline-offset: 10px;
 				}
 				p{
 					margin-bottom: 1em;
@@ -198,6 +198,7 @@
 
 			.decor_snow{
 				max-width: 50px;
+				animation: speen 15s infinite linear;
 				&.big{
 					max-width: 100px;
 				}

@@ -29,6 +29,7 @@
 				color: white;
 				font-size: 1.3rem;
 				opacity: .2;
+				text-transform: lowercase;
 				&:hover{
 					color: var(--gold);
 					opacity: .5;
@@ -49,8 +50,17 @@
 		.price-list{
 			.price{
 				padding: 1em;
-				margin: 1em 0;
+				margin: 2em 0;
 				background: #0A121E;
+				// transition: all 500ms ease;
+
+				&:nth-of-type(even){
+					background: rgba(15, 26, 41, 0.986);
+				}
+				&:hover{
+					scale: 1.02;
+					outline: 2px solid white;
+				}
 				.detail{
 					.header{
 						.main-icon{

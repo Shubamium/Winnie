@@ -6,7 +6,7 @@ type Props = {
 	pretext:string;
 }
 
-export default async function PanelLayout({children, title,pretext}: Props) {
+export default function PanelLayout({children, title,pretext}: Props) {
 	return (
 		<div className='panel_layout'>
 				<div className="decor_r"></div>
