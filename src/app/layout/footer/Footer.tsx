@@ -12,9 +12,9 @@ export default function Footer({}: Props) {
 							<img src="/images/graphics/main-logo.png" alt="" className='footer-logo' />
 							<hr />
 							<p className='subtitle'>Talent & Social Media Manager</p>
-							<p className='footer-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta nam maxime? Facilis quasi accusamus suscipit recusandae laborum qui minima nihil.</p>
+							<p className='footer-text'>Do you need more information? Are you unsure about something? {`Don't hesitate contacting me on the links below! I'll be more than happy to help you throught all you need.`}</p>
 
-							<p className='others'> <a target="_blank" href="mailto:email.me123@gmail.com" className="email">email.me123@gmail.com</a> - <a href="https://twitter.com/@winnietheblue2" className='email' target='_blank'>@winnietheblue2</a></p>
+							<p className='others'> <a target="_blank" href="mailto:winniethefluz89@gmail.com" className="email">winniethefluz89@gmail.com</a> - <a href="https://twitter.com/@winnietheblue1" className='email' target='_blank'>@winnietheblue1</a></p>
 							<p className='copyright'>© Winnie 2024. All rights reserved.</p>
 						</div>
 						<div className="nav-part">
@@ -32,7 +32,7 @@ export default function Footer({}: Props) {
 							</nav>
 							<div className="other">
 								<div className="contacts">
-									<a href="https://twitter.com/Winnietheblue1" target="_blank" className="contact-link">
+									<a href="https://twitter.com/@winnietheblue1" target="_blank" className="contact-link">
 										<FaTwitter/>
 									</a>
 									<a href="https://twitch.tv/winniethefluz" target="_blank" className="contact-link">

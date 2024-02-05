@@ -17,7 +17,7 @@
 		z-index: -100;
 	}
 	.confine{
-		max-width: 1400px;
+		max-width: 1500px;
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 2fr 1.2fr 2fr;
@@ -76,16 +76,24 @@
 			.service{
 				background:  linear-gradient(180deg, #121319 0%, #121319 51%, rgba(13.98, 18.20, 43.56, 0.49) 100%);
 				border: 2px solid var(--gold);
-				padding: .5em;
+				padding: 1em;
 				position: relative;
+				// max-width: 260px;
 				margin-top: 50px;
 				// padding-top: -100px;
+				box-shadow: 5px 5px 0px black;
 				transition: all 500ms ease;
 				outline: 1px solid transparent;
+				.fw{
+					font-size: 1rem;
+					color: white;
+					font-weight: bold;
+				}
 				&:hover{
 					outline: 2px solid white;
 					outline-offset: 5px;
 					scale: 1.05;
+					background: var(--red);
 					.icons{
 						z-index: 1000;
 						scale: 1.02;
@@ -129,7 +137,7 @@
 				.title{
 					margin: .5em 0;
 					h2{
-						white-space: nowrap;
+						// white-space: nowrap;
 						font-size: .9rem;
 						color: var(--gold);
 					}

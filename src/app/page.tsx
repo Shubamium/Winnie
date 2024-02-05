@@ -26,7 +26,7 @@ export default function Home() {
 									<FaCrown/>
 								</a>
 							</div>
-							<a  href='mailto:email.me123@gmail.com' className="email"> <FaMailBulk/> email.me123@gmail.com </a>
+							<a  href='mailto:winniethefluz89@gmail.com' className="email"> <FaMailBulk/> winniethefluz89@gmail.com </a>
 					</motion.div>
 					<motion.div transition={{delayChildren:1}} className="right">
 							<motion.img  animate={{x:0,opacity:1}} initial={{x:100,opacity:0}} transition={{delay:0}}src="/images/graphics/main-pfp.png" alt="" className="main-pfp" />
@@ -43,7 +43,9 @@ export default function Home() {
 								<FaSnowflake/>
 								<FaSnowflake/>
 							</motion.p>							
-							<motion.button animate={{x:0,opacity:1}} initial={{x:-100,opacity:0}} transition={{delay:0.5}} className='btn btn-cta'>  Work With Me <FaHandshake/> </motion.button>
+							<motion.div animate={{x:0,opacity:1}} initial={{x:-100,opacity:0}} transition={{delay:0.5}} >
+								<a target='_blank' href="https://vgen.co/winnietheblue" className='btn btn-cta'>Work With Me <FaHandshake/></a> 
+							</motion.div>
 					</motion.div>
 				</div>
 			</div>

@@ -48,7 +48,7 @@ export default function PriceSelector({priceData}: Props) {
 					})}
 			</div>
 			<div className="description">
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ipsam officiis quam cupiditate veritatis deserunt adipisci repellat magnam repellendus nemo iste nihil neque possimus atque, a illum dolorem ex explicabo?</p>
+				<p>Welcome to my <b>comprehensive range of services</b> designed to meet your diverse needs and exceed your expectations. At our Cafè, we pride ourselves on <u>delivering top-notch services</u> to enhance your experience and achieve your goals. <br/><br/> Feel free to explore our rich menu below and discover how we can partner with you to unlock new possibilities and drive success.</p>
 			</div>
 
 			<motion.div initial="initial" animate="animate" exit="exit" transition={{delay:1,duration:1.5, staggerChildren:0.5}} className="price-list">
@@ -80,7 +80,7 @@ function Price({title,price,description,notes,variants}:PriceProps){
 					<div className="diamond"></div>
 					<div className="line"></div>
 				</div>
-				<p className='description'>{description}</p>
+				<div className='description'>{description}</div>
 			</div>
 			<div className="pricing">
 				<div className="price-container">
@@ -96,8 +96,6 @@ function Price({title,price,description,notes,variants}:PriceProps){
 								{note}
 						</p>
 					})}	
-					{/* <p className='extra'><span className="increase">150$</span> for every streaming and social media platform.</p> */}
-					{/* <p className='extra'><span className="decrease">150$</span> for every streaming and social media platform.</p> */}
 				</div>
 			</div>
 	</motion.div>

@@ -45,6 +45,10 @@
 			max-width: 80%;
 			margin: 0 auto;
 			opacity: .7;
+
+			b{
+				color: var(--lBlue);
+			}
 		}
 
 		.price-list{
@@ -100,9 +104,18 @@
 						font-size: .8rem;
 						color: white;
 						letter-spacing: 2px;
+						b{
+							font-weight: 500;
+
+						}
 					}
 				}
-
+				.description{
+					letter-spacing: 2px !important;
+					b,strong{
+						font-weight: 800;
+					}
+				}
 				.pricing{
 					.price-container{
 						display: flex;
@@ -123,6 +136,7 @@
 								z-index: 1;
 								position: relative;
 							}
+							
 							position: relative;
 							&::before{
 								content:'';
