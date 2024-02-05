@@ -6,6 +6,10 @@ import { FaBook, FaClipboardList } from 'react-icons/fa'
 import './list.scss'
 type Props = {}
 import {motion} from 'framer-motion'
+import { FaHammer, FaPen } from 'react-icons/fa6'
+import { BsPerson } from 'react-icons/bs'
+import { TbArrowGuide } from 'react-icons/tb'
+import { IoMdShare } from 'react-icons/io'
 export default function ListPage({}: Props) {
 
 
@@ -24,7 +28,7 @@ export default function ListPage({}: Props) {
 			<div className="confine">
 			<motion.div  initial={{opacity:0, y:100}} animate={{opacity:1, y:0}} transition={{duration:1.5,delay:1.2, }}  className="service-list l">
 					<div className="one">
-						<Service icon={<FaClipboardList/>} title="Brand & Talent Management">
+						<Service icon={<BsPerson/>} title="Brand & Talent Management">
 								<p><span className='fw'>{`Whether`}</span> you are a freshly new <b>Vtuber/Business</b> or already into the OGs, thanks to my management and SEO knowledge.</p>
 								<p>{`I'll`} be here to <u>help you building/promoting</u> your <b>Brand</b>, improving your <b>Consistency</b> and <b>Online persona</b> for better results with the audiance.</p>
 
@@ -61,17 +65,17 @@ export default function ListPage({}: Props) {
 
 			<motion.div initial={{opacity:0, y:-100}} animate={{opacity:1, y:0}} transition={{duration:1.2,delay:1.2}} className="service-list r">
 					<div className="two">
-						<Service icon={<FaBook/>} title='Social media & Copywriting'>
+						<Service icon={<FaPen/>} title='Social media & Copywriting'>
 							<p><span className='fw'>{`I can`}</span> assist you in managing your social media accounts by optimizing descriptions, titles and tags to improve your <b>visibility</b> and <b>interactions</b>.</p>
 							<p>  I will review and help you <u>crafting posts</u> on your social media <b>in the most effective way</b>, improving phrasing and overall presentation. I would rather to not just upload for you! <br/> <br/> <b>My aim is to help my clients to improve themself as content creators.</b></p>
 						</Service>
-						<Service icon={<FaBook/>} title='Career Guidance & Scheduling'>
+						<Service icon={<TbArrowGuide/>} title='Career Guidance & Scheduling'>
 							<p><span className='fw'>{`If you`}</span> are struggling with content crafting, deadlines and obligations, <b>I will make and manage schedules</b> for you and your content and <u>for punctual fullfilment of tasks</u>.</p>
 							<p>I will also help you find your way as a content creator <b>basing on your strenghts</b> and <b>developing your unique style as such</b>.</p>
 						</Service>
 					</div>
 					<div className="one">
-						<Service icon={<FaBook/>} title='Communication Handling & Scouting'>
+						<Service icon={<IoMdShare/>} title='Communication Handling & Scouting'>
 							<p><span className='fw'>{`Always`}</span> been a shy type who doesn&lsquo;t like to call in to order pizza? Don&lsquo;t worry I got you! Thanks to my wide <u>business english vocabulary</u> I will <b>handle your business Email and communications</b> to <u>help you reach out</u> new partners and collaborators. </p>
 							<p>You will also have <b>access</b> to my <b>network of connections</b> which <u>will help you look for people</u> to commission <b>(even with discounts maybe in the future)</b> basing on your needs and likes and </p>
 							<p><b>I&lsquo;ll be ready to handle the asset negotiation of</b> commissions, <u>organize the collabs</u> you wish to have, and any other communication with others you wish me to handle!.</p>
