@@ -19,8 +19,8 @@ export default function Home() {
 								<a href="https://vgen.co/winnietheblue" target="_blank" className="contact-link">
 									<img src="/images/graphics/vgen.png" alt="" className='vgen' />
 								</a>
-								<a href="#" target="_blank" className="contact-link">
-									<FaTiktok/>
+								<a href="https://www.twitch.tv/winniethefluz" target="_blank" className="contact-link">
+									<FaTwitch/>
 								</a>
 								<a href="https://throne.com/winnietheblue" target="_blank" className="contact-link">
 									<FaCrown/>
