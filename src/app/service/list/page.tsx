@@ -36,12 +36,12 @@ export default function ListPage({}: Props) {
 					</div>
 					<div className="two">
 						<Service icon={<FaClipboardList/>} title="Project Management">
-								<p><span className='fw'>{`What's`}</span> all know how building up or following a project can be messy and busy without the right preparation. </p>
+								<p><span className='fw'>{`We`}</span> all know how building up or following a project can be messy and busy without the right preparation. </p>
 								<p>With my <u>coordinating</u> and <u>strategizing</u> skills, I will be ensuring that every aspect of it is well <b>prepared</b> and <b>organized</b>.</p>
 
 						</Service>
 						<Service icon={<FaBook/>} title='Debut Management (Vtuber)'>
-							<p><span className='fw'>{`We`}</span> more important than starting with the right foot? We all know how much does a Debut matter for a Vtuber.  <b>I will give you my full assistance</b> and guidence to make this event as memorable as it should be.</p>
+							<p><span className='fw'>{`What's`}</span> more important than starting with the right foot? We all know how much does a Debut matter for a Vtuber.  <b>I will give you my full assistance</b> and guidence to make this event as memorable as it should be.</p>
 							<p> I will help <b>providing for everthing</b> {`that's`} necessary for your debut and also developing a social media <u>strategy to boost your visibility</u> for the event.</p>
 						</Service>
 					</div>

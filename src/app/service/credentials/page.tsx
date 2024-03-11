@@ -25,7 +25,7 @@ export default function CredentialsPage({}: Props) {
 				<div className="credential">
 				<div className="confine">
 						<motion.figure animate={{y:0}} initial={{y:-100}} transition={{duration:1}} className='art-part'>
-								<img src="/images/graphics/character-art.png" alt="" className='character-art' />
+								<img src="/images/graphics/character-art_new.png" alt="" className='character-art' />
 								<motion.img animate={{opacity:1,x:0}} initial={{opacity:0,x:-100}} transition={{duration:.8,delay:1.9}} src="/images/graphics/main-logo.png" alt="" className='decor decor_logo' />
 								<motion.img animate={{opacity:1,y:0}} initial={{opacity:0,y:-100}} transition={{duration:.8,delay:1.5}} src="/images/decors/snowflake.png" alt="" className='decor decor_snow-one' />
 								<motion.img animate={{opacity:1,y:0}} initial={{opacity:0,y:-100}} transition={{duration:1.2,delay:1}} src="/images/decors/snowflake.png" alt="" className='decor decor_snow-two' />
